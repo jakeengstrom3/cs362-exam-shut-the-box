@@ -4,7 +4,7 @@ describe 'A box' do
 
   describe 'attributes' do
     it 'has tiles' do
-      skip
+      Box.new.tiles
     end
   end
 
