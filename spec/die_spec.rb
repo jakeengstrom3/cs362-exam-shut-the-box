@@ -18,19 +18,20 @@ describe 'A die' do
     end
 
     it 'can be created with a custom number of sides' do
-      skip
+      custom_num_of_sides = 5
+      expect(Die.new(custom_num_of_sides).number_of_sides).to eq(custom_num_of_sides)
     end
   end
 
   describe 'face value' do
     it 'has a face value of 1 by default' do
-      skip
+      expect(Die.new.face_value).to eq(1)
     end
   end
 
   describe '#to_s string representation' do
-    it 'TODO' do
-      skip
+    it 'returns the face value converted to a string' do
+      expect(Die.new.to_s).to eq("1")
     end
   end
 
