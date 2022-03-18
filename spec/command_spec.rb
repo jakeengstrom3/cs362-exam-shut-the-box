@@ -4,7 +4,7 @@ describe 'A command' do
 
   describe 'attributes' do
     it 'has text' do
-      skip
+      Command.new("FAKE").text
     end
   end
 
