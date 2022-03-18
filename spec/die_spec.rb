@@ -3,18 +3,18 @@ require_relative '../lib/die'
 describe 'A die' do
 
   describe 'attributes' do
-    it 'TODO' do
-      skip
+    it 'responds to number_of_sides' do
+      Die.new.number_of_sides
     end
 
-    it 'TODO' do
-      skip
+    it 'responds to face_value' do
+      Die.new.face_value
     end
   end
 
   describe 'number of sides' do
     it 'has six sides by default' do
-      skip
+      expect(Die.new.number_of_sides).to eq(6)
     end
 
     it 'can be created with a custom number of sides' do
