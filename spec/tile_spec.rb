@@ -37,13 +37,15 @@ describe 'A tile' do
   describe '#to_s string representation' do
     context 'when up' do
       it 'shows its value within brackets' do
-        skip
+        expect(Tile.new(1).to_s).to eq("[1]")
       end
     end
 
     context 'when down' do
       it 'shows a space within brackets' do
-        skip
+        tile = Tile.new(1)
+        tile.flip
+        expect(tile.to_s).to eq("[ ]")
       end
     end
   end
