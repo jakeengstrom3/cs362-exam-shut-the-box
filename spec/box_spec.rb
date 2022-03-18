@@ -95,7 +95,8 @@ describe 'A box' do
     # And tile 2 is down,
     # The string representation is [1][ ][3][4].
     it "is each tile value in brackets with blanks for tiles that are down" do
-      skip
+      box.flip([1,2])
+      expect(box.to_s).to eq("[ ][ ][3][4][5][6][7][8][9]")
     end
   end
 end
