@@ -12,17 +12,24 @@ describe 'A tile' do
 
   describe '#up?' do
     it 'is up by default' do
-      skip
+      expect(Tile.new(1).up?).to be(true)
     end
   end
 
   describe '#flip' do
     it 'is up after being flipped' do
-      skip
+      tile = Tile.new(1)
+      tile.flip
+      expect(tile.up?).to be(false)
     end
 
     it 'stays down despite being flipped more than once' do
-      skip
+      tile = Tile.new(1)
+      tile.flip
+      tile.flip
+      expect(tile.up?).to be(false)
+      tile.flip
+      expect(tile.up?).to be(false)
     end
 
   end
