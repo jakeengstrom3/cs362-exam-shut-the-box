@@ -5,7 +5,7 @@ describe 'A tile' do
   describe 'attributes' do
 
     it 'has a value' do
-      skip
+      Tile.new(1).value
     end
 
   end
